@@ -1,0 +1,182 @@
+:root {
+    --yellow-font: #F2AF29;
+    --white-font: #E0E0CE;
+    --color2: #000000;
+    --color1: #474747;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    color: var(--white-font);
+    background-color: var(--color1);
+}
+
+.banner {
+    background-color: var(--color2);
+    padding: 1em;
+}
+
+.banner-title {
+    color: var(--yellow-font);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.banner-subtitle {
+    color: var(--white-font);
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.text-box {
+    background-color: var(--color2);
+    padding: 1em;
+    text-align: justify;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.photo {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.photo-box-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* GRID AREAS */
+
+#banner {
+    grid-area: ban;
+}
+
+#PhotoBox1 {
+    grid-area: pb1;
+}
+
+#PhotoBox2 {
+    grid-area: pb2;
+}
+
+#PhotoBox3 {
+    grid-area: pb3;
+}
+
+#PhotoBox4 {
+    grid-area: pb4;
+}
+
+#PhotoBox5 {
+    grid-area: pb5;
+}
+
+#PhotoBox6 {
+    grid-area: pb6;
+}
+
+#TextBox1 {
+    grid-area: tb1;
+}
+
+#TextBox2 {
+    grid-area: tb2;
+}
+
+#TextBox3 {
+    grid-area: tb3;
+}
+
+#TextBox4 {
+    grid-area: tb4;
+}
+
+#TextBox5 {
+    grid-area: tb5;
+}
+
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+
+/* GRID TEMPLATES*/
+
+
+    .main-container {
+
+    grid-template:
+    "ban ban ban ban" minmax(18, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb1 pb1 pb1 pb1" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tb1 tb1 tb1 tb1" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb2 pb2 pb2 pb2" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tb2 tb2 tb2 tb2" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb3 pb3 pb3 pb3" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tb3 tb3 tb3 tb3" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb4 pb4 pb4 pb4" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tb4 tb4 tb4 tb4" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb5 pb5 pb5 pb5" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tb5 tb5 tb5 tb5" minmax(28, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pb6 pb6 pb6 pb6" minmax(28, auto)
+    }
+
+
+@media (min-width: 50em) {
+    .main-container {
+        grid-template:
+        "ban ban ban ban ban ban ban ban" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "pb1 pb1 pb1 pb1 pb1 pb1 pb1 pb1" minmax(46em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tb1 tb1 tb1 tb1 tb1 tb1 tb1 tb1" minmax(46em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "pb2 pb2 pb2 pb2 tb2 tb2 tb2 tb2" minmax(26em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tb3 tb3 tb3 tb3 pb3 pb3 pb3 pb3" minmax(26em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "pb4 pb4 pb4 pb4 tb4 tb4 tb4 tb4" minmax(26em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tb5 tb5 tb5 tb5 pb5 pb5 pb5 pb5" minmax(26em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "pb6 pb6 pb6 pb6 pb6 pb6 pb6 pb6" minmax(46em, auto)
+    }
+}
+
+@media (min-width: 75em) {
+    .main-container {
+        grid-template:
+            "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(12em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "pb1 pb1 pb1 pb1 pb1 pb1 tb1 tb1 tb1 tb1 tb1 tb1" minmax(40em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "pb2 pb2 pb2 pb2 tb2 tb2 tb2 tb2 pb3 pb3 pb3 pb3" minmax(26em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "tb3 tb3 tb3 tb3 pb4 pb4 pb4 pb4 tb4 tb4 tb4 tb4" minmax(26em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+            "pb5 pb5 pb5 pb5 tb5 tb5 tb5 tb5 pb6 pb6 pb6 pb6" minmax(26em, auto)
+    }
+}
