@@ -1,12 +1,15 @@
 :root {
     --yellow-font: #F2AF29;
-    --white-font: #E0E0CE;
+    --white-font: #ffffff;
     --color2: #000000;
     --color1: #474747;
+    
+
+
 }
 
 body {
-    background-color: var(--color1);
+    background-image: linear-gradient(to bottom, #283048, #859398);
 }
 
 .main-container {
@@ -14,12 +17,14 @@ body {
     margin: 0 auto;
     font-family: Inter;
     color: var(--white-font);
-    background-color: var(--color1);
+    
 }
 
 .banner {
     background-color: var(--color2);
     padding: 1em;
+    border-radius: 1em;
+    
 }
 
 .banner-title {
@@ -36,18 +41,18 @@ body {
 
 .text-box {
     background-color: var(--color2);
-    padding: 1em;
-    text-align: justify;
-    align-items:center;
-    justify-content:center;
-    overflow: hidden;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .photo {
-    background-color: var(--color2);
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    border-radius: 1em;
     
 }
 
@@ -119,29 +124,30 @@ body {
     .main-container {
 
     grid-template:
-    "ban ban ban ban" minmax(18, auto)
+    "ban ban ban ban" minmax(18em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb1 pb1 pb1 pb1" minmax(28, auto)
+    "pb1 pb1 pb1 pb1" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "tb1 tb1 tb1 tb1" minmax(28, auto)
+    "tb1 tb1 tb1 tb1" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb2 pb2 pb2 pb2" minmax(28, auto)
+    "pb2 pb2 pb2 pb2" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "tb2 tb2 tb2 tb2" minmax(28, auto)
+    "tb2 tb2 tb2 tb2" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb3 pb3 pb3 pb3" minmax(28, auto)
+    "pb3 pb3 pb3 pb3" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "tb3 tb3 tb3 tb3" minmax(28, auto)
+    "tb3 tb3 tb3 tb3" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb4 pb4 pb4 pb4" minmax(28, auto)
+    "pb4 pb4 pb4 pb4" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "tb4 tb4 tb4 tb4" minmax(28, auto)
+    "tb4 tb4 tb4 tb4" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb5 pb5 pb5 pb5" minmax(28, auto)
+    "pb5 pb5 pb5 pb5" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "tb5 tb5 tb5 tb5" minmax(28, auto)
+    "tb5 tb5 tb5 tb5" minmax(28em, auto)
     " .   .   .   . " minmax(2em, auto)
-    "pb6 pb6 pb6 pb6" minmax(28, auto)
+    "pb6 pb6 pb6 pb6" minmax(28em, auto)
+    " .   .   .   . " minmax(2em, auto)
     }
 
 
@@ -163,6 +169,7 @@ body {
         "tb5 tb5 tb5 tb5 pb5 pb5 pb5 pb5" minmax(26em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         "pb6 pb6 pb6 pb6 pb6 pb6 pb6 pb6" minmax(46em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
     }
 }
 
@@ -178,5 +185,6 @@ body {
             "tb3 tb3 tb3 tb3 pb4 pb4 pb4 pb4 tb4 tb4 tb4 tb4" minmax(26em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
             "pb5 pb5 pb5 pb5 tb5 tb5 tb5 tb5 pb6 pb6 pb6 pb6" minmax(26em, auto)
+            " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
     }
 }
