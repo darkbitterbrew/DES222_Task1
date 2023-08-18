@@ -42,7 +42,9 @@ body {
 .text-box {
     background-color: var(--color2);
     border-radius: 1em;
+    padding: 1em;
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
     
